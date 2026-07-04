@@ -1,0 +1,1858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Mold | High-Durability Sustainable Packaging Systems</title>
+
+    <style>
+        /* Modern Design System Tokens - Premium Aesop/Apple Inspired Organic Aesthetic */
+        :root {
+            --primary: #1C3524;       /* Rich Deep Sage Forest */
+            --primary-light: #2D5A3C; /* Leaf Green */
+            --secondary: #D07C4B;     /* Warm Clay / Terracotta Accent */
+            --secondary-dark: #B25A2C;/* Deepened Terracotta */
+            --accent: #EFE6DD;        /* Premium Sandstone Linen */
+            --bg-light: #FAF8F5;      /* Warm Off-White / Alabaster */
+            --bg-alt: #F3EFEA;        /* Sandy Linen Gray */
+            --text-main: #19201D;     /* Deep Charcoal-Green */
+            --text-muted: #4F5A56;    /* Soft Muted Charcoal */
+            --border-color: #E2ECE5;  /* Organic Thin Border */
+            --white: #FFFFFF;
+            
+            /* Apple-inspired clean baseline */
+            --font-scale: 100%;
+        }
+
+        /* Basic Reset & Core Layout - Apple System Font Stack applied globally */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "SF Pro", "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-variant-numeric: tabular-nums lining-nums; /* Ensures all numbers align cleanly like spreadsheets */
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: var(--font-scale);
+        }
+
+        body {
+            color: var(--text-main);
+            background-color: var(--bg-light);
+            line-height: 1.75;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Adaptive Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 6%;
+        }
+
+        /* Top Accessibility Helper Bar */
+        .a11y-bar {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 10px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .a11y-controls {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .a11y-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: var(--white);
+            padding: 3px 12px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.75rem;
+            transition: all 0.2s ease;
+        }
+
+        .a11y-btn:hover {
+            background: var(--secondary);
+            border-color: var(--secondary);
+        }
+
+        /* Header Navigation */
+        header {
+            background-color: rgba(250, 248, 245, 0.85);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(12px);
+            transition: all 0.3s ease;
+        }
+
+        .navbar-full {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100px;
+            padding: 0 40px;
+            width: 100%;
+        }
+
+        .brand-logo img {
+            height: 52px;
+            transition: transform 0.3s ease;
+        }
+
+        .brand-logo img:hover {
+            transform: scale(1.02);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 35px;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-main);
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            position: relative;
+            padding: 6px 0;
+            transition: color 0.3s;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--secondary);
+            transition: width 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Portal Navigation Action Buttons */
+        .btn-login {
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            padding: 10px 24px;
+            border-radius: 4px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            cursor: pointer;
+            background: transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-login:hover {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        .btn-portal {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 11px 24px;
+            border-radius: 4px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-portal:hover {
+            background-color: var(--primary-light);
+            box-shadow: 0 4px 15px rgba(28, 53, 36, 0.2);
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: var(--white);
+            padding: 15px 36px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--secondary-dark);
+            box-shadow: 0 4px 15px rgba(208, 124, 75, 0.3);
+        }
+
+        /* Immersive Narrative Scroll Sections */
+        .parallax-section {
+            position: relative;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 95vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: 4rem 0;
+        }
+
+        /* Premium backdrops */
+        .bg-hero {
+            background-image: url('eco_mold_websiteimage01.webp');
+        }
+
+        .bg-safety {
+            background-image: url('https://images.unsplash.com/photo-1463171359079-3d99966c2176?auto=format&fit=crop&w=1920&q=80');
+        }
+
+        .parallax-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(28, 53, 36, 0.85); /* Deep rich green tint */
+            z-index: 1;
+        }
+
+        .parallax-overlay-light {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(250, 248, 245, 0.92); /* Clean, high-contrast alabaster linen shield */
+            z-index: 1;
+        }
+
+        .parallax-content {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+        }
+
+        /* Editorial Typography using Apple Sans */
+        .hero-title {
+            font-size: 4.2rem;
+            line-height: 1.15;
+            color: var(--primary);
+            margin-bottom: 2rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        .hero-para {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            margin-bottom: 3.5rem;
+            max-width: 750px;
+            margin-inline: auto;
+            line-height: 1.9;
+        }
+
+        /* About Us Dual Column Layout with Premium Bio Imagery */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .about-image-wrapper img {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 20px 45px rgba(28, 53, 36, 0.08);
+            border: 1px solid var(--border-color);
+        }
+
+        .about-text-card {
+            background-color: var(--white);
+            padding: 50px 40px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.015);
+        }
+
+        /* Responsive Grid Frameworks */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .grid-5 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        /* Custom Interactive Table Calculator styling */
+        .calculator-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            text-align: left;
+            display: none; /* Injected programmatically when cards are dropped */
+        }
+
+        .calculator-table th {
+            border-bottom: 2px solid var(--border-color);
+            padding: 16px 12px;
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+        }
+
+        .calculator-table td {
+            padding: 20px 12px;
+            border-bottom: 1px solid var(--border-color);
+            vertical-align: middle;
+            font-size: 0.95rem;
+        }
+
+        .qty-input {
+            width: 90px;
+            padding: 8px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            outline: none;
+            font-weight: 700;
+            background-color: var(--bg-light);
+            color: var(--primary);
+        }
+
+        .qty-input:focus {
+            border-color: var(--secondary);
+            box-shadow: 0 0 6px rgba(208, 124, 75, 0.2);
+        }
+
+        .remove-item-btn {
+            background: none;
+            border: none;
+            color: #d9534f;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: color 0.2s;
+        }
+
+        .remove-item-btn:hover {
+            color: #b0302c;
+        }
+
+        /* Luxury KPI Metrics Section */
+        .calc-summary {
+            background-color: var(--white);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 30px;
+            margin: 30px 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 24px;
+            text-align: center;
+        }
+
+        .calc-summary-stat h4 {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .calc-summary-stat p {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        /* Floating Diagnostics Lab Event Console */
+        .dev-console-btn {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background-color: var(--primary);
+            color: var(--white);
+            border: none;
+            padding: 14px 28px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            box-shadow: 0 8px 30px rgba(18, 26, 21, 0.25);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .dev-console-btn:hover {
+            background-color: var(--secondary);
+            transform: translateY(-2px);
+        }
+
+        .lab-console-overlay {
+            position: fixed;
+            bottom: 95px;
+            left: 30px;
+            width: 440px;
+            background-color: rgba(18, 26, 21, 0.95);
+            color: #b5f5c0;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 15px 45px rgba(0,0,0,0.3);
+            border: 1px solid rgba(164, 245, 181, 0.15);
+            z-index: 1999;
+            display: none;
+            animation: slideUp 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .lab-console-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(164, 245, 181, 0.2);
+            padding-bottom: 12px;
+            margin-bottom: 18px;
+            font-weight: 800;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .lab-console-line {
+            margin-bottom: 12px;
+            font-size: 0.85rem;
+            line-height: 1.45;
+        }
+
+        .lab-console-label {
+            color: var(--secondary);
+            font-weight: bold;
+        }
+
+        /* Search / Filtering Row */
+        .filter-controls {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 45px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background-color: var(--white);
+            border: 1px solid var(--border-color);
+            padding: 10px 24px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.3s;
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background-color: var(--primary);
+            color: var(--white);
+            border-color: var(--primary);
+        }
+
+        /* Product Card Styles */
+        .product-card {
+            background: var(--white);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 30px 24px;
+            text-align: center;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            cursor: grab;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.01);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .product-card:hover img {
+            transform: scale(1.02);
+        }
+
+        /* Dynamic form validation helper messages */
+        .validation-msg {
+            font-size: 0.8rem;
+            margin-top: -8px;
+            display: none;
+            width: 100%;
+            max-width: 400px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        /* =========================================================
+           ULTRA-MINIMALIST TEXT-ONLY VALUE CARDS (Visionary Choices)
+           ========================================================= */
+        .value-card {
+            background: transparent; 
+            border: none;
+            border-top: 1px solid var(--border-color);
+            border-radius: 0;
+            box-shadow: none; 
+            transition: border-color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            padding-top: 30px;
+        }
+
+        .value-card-body {
+            padding: 0;
+        }
+
+        .value-card:hover {
+            transform: none;
+            box-shadow: none;
+            border-top-color: var(--secondary);
+        }
+
+        .value-card .value-num {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 800;
+            color: var(--secondary);
+            letter-spacing: 1.5px;
+            margin-bottom: 12px;
+        }
+
+        .value-card h3 {
+            color: var(--primary);
+            margin-bottom: 14px;
+            font-size: 1.35rem;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+        }
+
+        .value-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.75;
+        }
+
+        /* =========================================
+           MINIMALIST "ECO INFO" VERTICAL SCROLL CAROUSEL
+           ========================================= */
+        .eco-info-wrapper {
+            background-color: var(--white);
+            border-radius: 16px;
+            padding: 50px;
+            border: 1px solid var(--border-color);
+            margin-top: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+        }
+
+        .eco-info-deck {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        /* Left-side Image viewport - vertical sliding translation framework */
+        .eco-info-viewport {
+            width: 100%;
+            height: 380px;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 15px 35px rgba(28, 53, 36, 0.08);
+            position: relative;
+        }
+
+        .eco-info-strip {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s cubic-bezier(0.76, 0, 0.24, 1); /* Apple-style buttery translation */
+        }
+
+        .eco-info-image-container {
+            width: 100%;
+            height: 380px; /* Locks height to fit viewport perfectly */
+            flex-shrink: 0;
+        }
+
+        .eco-info-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Right-side Facts Display Area */
+        .eco-info-display-card {
+            background-color: var(--bg-light);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 40px;
+            min-height: 380px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+        }
+
+        .eco-info-numerator {
+            font-size: 0.8rem;
+            font-weight: 800;
+            color: var(--secondary);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .eco-info-headline {
+            font-size: 1.8rem;
+            color: var(--primary);
+            font-weight: 800;
+            line-height: 1.3;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+
+        .eco-info-body {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 30px;
+            min-height: 110px; /* Prevents card jumping during transition */
+        }
+
+        /* Pagination & navigation controls alignment */
+        .eco-info-controls-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .eco-info-dots {
+            display: flex;
+            gap: 8px;
+        }
+
+        .eco-info-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #cbd5e1;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .eco-info-dot.active {
+            background-color: var(--primary);
+            width: 24px;
+            border-radius: 4px;
+        }
+
+        .eco-info-arrows {
+            display: flex;
+            gap: 12px;
+        }
+
+        .eco-info-arrow-btn {
+            background: var(--white);
+            border: 1px solid var(--border-color);
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+            color: var(--primary);
+        }
+
+        .eco-info-arrow-btn:hover {
+            background: var(--primary);
+            color: var(--white);
+            border-color: var(--primary);
+        }
+
+        /* =========================================
+           MINIMALIST SCIENCE & REGULATORY CORNER
+           ========================================= */
+        .science-section-wrapper {
+            background-color: var(--bg-alt);
+            border-radius: 16px;
+            padding: 5rem 4rem;
+            margin: 4rem auto;
+            max-width: 1100px;
+            border: 1px solid var(--border-color);
+        }
+
+        .science-banner h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        .science-banner p.sub {
+            color: var(--text-muted);
+            font-size: 1.25rem;
+            max-width: 750px;
+            margin: 0 auto 4rem auto;
+            line-height: 1.8;
+        }
+
+        /* Toast Notifications */
+        .notification {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 18px 30px;
+            border-radius: 4px;
+            box-shadow: 0 15px 45px rgba(0,0,0,0.15);
+            z-index: 2000;
+            border-left: 4px solid var(--secondary);
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            font-size: 0.9rem;
+            animation: slideIn 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(50px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        /* Modal styling */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(18, 26, 21, 0.55);
+            z-index: 3000;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(8px);
+        }
+
+        .modal-content {
+            background: var(--white);
+            padding: 50px;
+            border-radius: 8px;
+            text-align: center;
+            width: 90%;
+            max-width: 440px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+        }
+
+        /* Success Dialog */
+        .success-banner {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(18, 26, 21, 0.85);
+            z-index: 3010;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(12px);
+        }
+
+        .success-banner-content {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 60px 50px;
+            text-align: center;
+            max-width: 520px;
+            width: 90%;
+            box-shadow: 0 35px 80px rgba(0,0,0,0.18);
+            border-top: 6px solid var(--secondary);
+        }
+
+        /* Drag & Drop Zone Container Design */
+        .drop-zone {
+            background-color: var(--white);
+            border: 2px dashed var(--primary);
+            border-radius: 12px;
+            padding: 50px;
+            margin-top: 50px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.02);
+            transition: all 0.3s ease;
+        }
+
+        .drop-zone.dragover {
+            border-color: var(--secondary);
+            background-color: var(--bg-alt);
+        }
+
+        /* Form Design */
+        .quote-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-top: 35px;
+            padding-top: 35px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .form-input {
+            width: 100%;
+            max-width: 400px;
+            padding: 14px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-size: 0.95rem;
+            background-color: var(--bg-light);
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #0E1F13;
+            color: rgba(255, 255, 255, 0.7);
+            padding: 6rem 0 4rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 4rem;
+        }
+
+        .footer-brand p {
+            margin-top: 15px;
+            max-width: 320px;
+            line-height: 1.6;
+        }
+
+        .footer-contact h4 {
+            color: var(--white);
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+
+        .footer-contact p {
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+
+        .copyright {
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 2rem;
+            font-size: 0.85rem;
+            text-align: center;
+        }
+
+        /* Simple Navigation Scroll Indicator */
+        #scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: var(--secondary);
+            width: 0%;
+            z-index: 1001;
+            transition: width 0.1s ease-out;
+        }
+
+        /* OTP Code layout styling */
+        .otp-display-notice {
+            background-color: #FFF9E6;
+            color: #8A6D3B;
+            border: 1px solid #FBEED5;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .auth-channel-selector {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            text-align: left;
+            margin: 15px 0 25px 0;
+            width: 100%;
+            background-color: var(--bg-alt);
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+        }
+
+        .auth-channel-option {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-main);
+            cursor: pointer;
+        }
+
+        .auth-channel-option input {
+            accent-color: var(--primary);
+        }
+
+        /* Media Queries */
+        @media (max-width: 900px) {
+            .nav-links { display: none; }
+            .navbar-full { justify-content: center; padding: 0 15px; }
+            .hero-title { font-size: 2.8rem; }
+            .about-grid { grid-template-columns: 1fr; gap: 30px; }
+            .eco-info-deck { grid-template-columns: 1fr; }
+            .grid-3 { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress"></div>
+
+    <!-- Accessibility Helper Suite -->
+    <div class="a11y-bar">
+        <span>Accessibility Suite Active</span>
+        <div class="a11y-controls">
+            <span>Font Size Control:</span>
+            <button class="a11y-btn" onclick="adjustTextSize('down')">A-</button>
+            <button class="a11y-btn" onclick="adjustTextSize('reset')">Standard</button>
+            <button class="a11y-btn" onclick="adjustTextSize('up')">A+</button>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header id="site-header">
+        <div class="navbar-full">
+            <a href="#" class="brand-logo" aria-label="Eco Mold Home">
+                <img src="ECO MOLD logo 1 .png" alt="Eco Mold Corporate Logo">
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-anchor">About Us</a></li>
+                    <li><a href="#products" class="nav-anchor">Sustainable Products</a></li>
+                    <li><a href="#advantage" class="nav-anchor">Advantage</a></li>
+                    <li><button class="btn-login" onclick="openLogin('Client')">Client Portal</button></li>
+                    <li><button class="btn-portal" onclick="openLogin('Admin')">Admin Terminal</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Parallax Hero Banner -->
+        <section class="parallax-section bg-hero" id="home">
+            <div class="parallax-overlay-light"></div>
+            <div class="container parallax-content">
+                <div style="text-align: center; padding: 4rem 0;">
+                    <h1 id="welcome-message" class="hero-title">Your recipe is 5-star. Why is your packaging 0-star?</h1>
+                    <p class="hero-para">We aren't selling a plate, we are protecting their art. Join the Circular Elite and elevate your brand with intelligent, sustainable packaging solutions.</p>
+                    <a href="#products" class="btn-primary" style="font-size: 0.85rem; padding: 16px 36px;">Build Custom Quote</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section (Dual Column Layout with Premium Bio Tableware Image & Business Card Back text) -->
+        <section id="about" class="section-padding container">
+            <h2 class="section-title">Be Sustainable & Responsible</h2>
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1610557892470-76d74ae12419?auto=format&fit=crop&w=800&q=80" alt="Eco Mold Natural Raw Pulp Tableware" onerror="this.src='eco_mold_websiteimage01.webp'">
+                </div>
+                <div class="about-text-card">
+                    <p style="font-size: 1.25rem; color: var(--text-main); margin-bottom: 2rem; line-height: 1.85;">
+                        We replace harmful plastics with earth-friendly alternatives. Every product at Eco Mold is crafted from natural materials that are safe for your family and 100% compostable.
+                    </p>
+                    <p style="font-size: 1.6rem; color: var(--secondary); font-weight: 800; font-family: 'Plus Jakarta Sans', sans-serif; font-style: italic;">
+                        "Expensive maybe ! Worth it definitely!"
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="section-padding bg-alt">
+            <div class="container">
+                <h2 class="section-title">Your All-in-One Sustainable Armory</h2>
+                <p class="section-subtitle">Born from Earth. Engineered for the City. Drag and drop materials into your quote cart below.</p>
+
+                <!-- Search and Filtering UI Controls -->
+                <div class="filter-controls">
+                    <button class="filter-btn active" onclick="filterCatalog('all')">All Products</button>
+                    <button class="filter-btn" onclick="filterCatalog('Sugarcane')">Sugarcane</button>
+                    <button class="filter-btn" onclick="filterCatalog('Starch')">Corn Starch</button>
+                    <button class="filter-btn" onclick="filterCatalog('Wood')">Wood & Husk</button>
+                    <button class="filter-btn" onclick="filterCatalog('Reusable')">Reusable</button>
+                </div>
+
+                <!-- Responsive Grid Catalog -->
+                <div class="grid-5" id="product-grid">
+                    <div class="product-card" draggable="true" data-product="Bagasse" data-price="12" data-category="Sugarcane" id="card-bagasse">
+                        <img src="eco_mold_bagasse.jpg" alt="Sugarcane Bagasse Container">
+                        <h3>Bagasse</h3>
+                        <p>The Heat-Proof Hero</p>
+                        <div style="color: var(--primary); font-size: 0.9rem; font-weight: bold; margin-bottom: 5px;">Price: ₹12 / Unit</div>
+                    </div>
+                    <div class="product-card" draggable="true" data-product="Corn Starch" data-price="15" data-category="Starch" id="card-corn">
+                        <img src="eco_mold_corn strach.avif" alt="Corn Starch Bio-Shield">
+                        <h3>Corn Starch</h3>
+                        <p>The "Invisible" Bio-Shield</p>
+                        <div style="color: var(--primary); font-size: 0.9rem; font-weight: bold; margin-bottom: 5px;">Price: ₹15 / Unit</div>
+                    </div>
+                    <div class="product-card" draggable="true" data-product="Wooden Cutlery" data-price="8" data-category="Wood" id="card-wooden">
+                        <img src="eco_mold_wooden.jpeg" alt="Earthy Wooden Utensils">
+                        <h3>Wooden Cutlery</h3>
+                        <p>The Splinter-Free Luxury</p>
+                        <div style="color: var(--primary); font-size: 0.9rem; font-weight: bold; margin-bottom: 5px;">Price: ₹8 / Unit</div>
+                    </div>
+                    <div class="product-card" draggable="true" data-product="Recycled Cotton" data-price="25" data-category="Reusable" id="card-cotton">
+                        <img src="eco_cotton_bag.jpg" alt="Recycled Organic Cotton Tote Bag">
+                        <h3>Recycled Cotton</h3>
+                        <p>The Mobile Billboard</p>
+                        <div style="color: var(--primary); font-size: 0.9rem; font-weight: bold; margin-bottom: 5px;">Price: ₹25 / Unit</div>
+                    </div>
+                    <div class="product-card" draggable="true" data-product="Rice Husk" data-price="18" data-category="Wood" id="card-husk">
+                        <img src="eco_rice_husk.jpg" alt="Circular Rice Husk Packaging Plates">
+                        <h3>Rice Husk</h3>
+                        <p>Circle of Sustainability</p>
+                        <div style="color: var(--primary); font-size: 0.9rem; font-weight: bold; margin-bottom: 5px;">Price: ₹18 / Unit</div>
+                    </div>
+                </div>
+
+                <!-- Custom Quote Drop Zone Builder -->
+                <div class="drop-zone" id="quote-cart">
+                    <h3 style="color: var(--primary); font-size: 1.5rem; margin-bottom: 10px;">Your Custom Quote Builder</h3>
+                    <p style="margin-bottom: 20px;">Drag product cards here to compile an itemized list & calculate bulk volumes.</p>
+                    
+                    <!-- Dynamic Interactive Pricing Calculator (Using tabular numeric alignment) -->
+                    <table class="calculator-table" id="calc-table">
+                        <thead>
+                            <tr>
+                                <th>Product Item</th>
+                                <th>Unit Cost</th>
+                                <th>Quantity (Packs)</th>
+                                <th>Subtotal (INR)</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-rows">
+                            <!-- Injected dynamically -->
+                        </tbody>
+                    </table>
+
+                    <!-- Calculator Summary Dashboard -->
+                    <div class="calc-summary">
+                        <div class="calc-summary-stat">
+                            <h4>Total Items Sourced</h4>
+                            <p id="total-qty">0</p>
+                        </div>
+                        <div class="calc-summary-stat">
+                            <h4>Environmental Carbon Offset</h4>
+                            <p id="carbon-offset">0.0 kg</p>
+                        </div>
+                        <div class="calc-summary-stat">
+                            <h4>Estimated Quote Total</h4>
+                            <p id="quote-total">₹0</p>
+                        </div>
+                    </div>
+
+                    <!-- Client Details Form with stricter validations -->
+                    <form id="quoteRequestForm" class="quote-form">
+                        <p style="color: var(--text-main); font-weight: 700; margin-bottom: 10px;">Request Client Dispatch & Validation Details</p>
+                        
+                        <input type="text" id="clientName" class="form-input" placeholder="Organization / Representative Name" required>
+                        <span id="name-validation-error" class="validation-msg" style="color: #d9534f; margin-bottom: 10px;">Name must not contain any numeric values.</span>
+                        <span id="name-validation-success" class="validation-msg" style="color: var(--primary); margin-bottom: 10px;">✓ Name verified!</span>
+                        
+                        <input type="email" id="clientEmail" class="form-input" placeholder="Direct Corporate Email" required>
+                        <span id="email-validation-error" class="validation-msg" style="color: #d9534f; margin-bottom: 10px;">Please input a valid domain email address structure (containing '@' and a verified top-level domain, not simple shorthand like 'dd@ss').</span>
+                        <span id="email-validation-success" class="validation-msg" style="color: var(--primary); margin-bottom: 10px;">✓ Email address satisfies validation requirements!</span>
+                        
+                        <button type="submit" class="btn-primary" style="width: 100%; max-width: 400px; margin-top: 10px;">Submit Enterprise Quote</button>
+                    </form>
+                </div>
+
+                <!-- =========================================
+                   SUSTAINABLE "ECO INFO" CAROUSEL SECTION (Image after Image Vertical Format)
+                   ========================================= -->
+                <div class="eco-info-wrapper" id="eco-info-section">
+                    <h3 style="color: var(--primary); font-size: 1.6rem; font-weight: 800; letter-spacing: -0.5px;">Eco Info Center</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Simple, universal environmental facts that guide our collective circular responsibility.</p>
+                    
+                    <div class="eco-info-deck">
+                        <!-- Left Viewport: holds the vertically scrolling image strip -->
+                        <div class="eco-info-viewport">
+                            <div class="eco-info-strip" id="eco-info-image-strip">
+                                <div class="eco-info-image-container">
+                                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Pristine coastal ocean waters">
+                                </div>
+                                <div class="eco-info-image-container">
+                                    <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=800&q=80" alt="Organic decomposition soil sprout">
+                                </div>
+                                <div class="eco-info-image-container">
+                                    <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80" alt="Thick forest canopy filtration">
+                                </div>
+                                <div class="eco-info-image-container">
+                                    <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80" alt="Misty morning clean atmosphere valley">
+                                </div>
+                                <div class="eco-info-image-container">
+                                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80" alt="Golden recycling circular loop concept">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Card: Displays active environmental fact content -->
+                        <div class="eco-info-display-card">
+                            <div>
+                                <div class="eco-info-numerator" id="eco-info-step">01 / 05</div>
+                                <h4 class="eco-info-headline" id="eco-info-header">Ocean Preservation</h4>
+                                <p class="eco-info-body" id="eco-info-text">
+                                    Over 8 million tons of standard plastic enter global water networks annually. Utilizing biological materials prevents synthetic microplastics from breaking down and harming marine habitats.
+                                </p>
+                            </div>
+                            
+                            <div class="eco-info-controls-container">
+                                <!-- Navigation Dots -->
+                                <div class="eco-info-dots">
+                                    <div class="eco-info-dot active" onclick="jumpToEcoFact(0)"></div>
+                                    <div class="eco-info-dot" onclick="jumpToEcoFact(1)"></div>
+                                    <div class="eco-info-dot" onclick="jumpToEcoFact(2)"></div>
+                                    <div class="eco-info-dot" onclick="jumpToEcoFact(3)"></div>
+                                    <div class="eco-info-dot" onclick="jumpToEcoFact(4)"></div>
+                                </div>
+
+                                <!-- Arrow Toggles -->
+                                <div class="eco-info-arrows">
+                                    <button class="eco-info-arrow-btn" onclick="toggleEcoFact('prev')" aria-label="Previous Eco Fact">←</button>
+                                    <button class="eco-info-arrow-btn" onclick="toggleEcoFact('next')" aria-label="Next Eco Fact">→</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==========================================
+           MINIMALIST SCIENCE & REGULATORY CORNER
+           ========================================== -->
+        <section id="safety" class="section-padding container">
+            <div class="science-section-wrapper" id="safety-banner-area">
+                <div style="text-align: center; max-width: 800px; margin: 0 auto 50px auto;">
+                    <h2 style="font-size: 2.8rem; color: var(--primary); font-weight: 800; margin-bottom: 20px; letter-spacing: -1px;">Science-Backed Food Safety</h2>
+                    <p style="color: var(--text-muted); font-size: 1.15rem; line-height: 1.8;">
+                        Every Eco Mold product is subjected to comprehensive thermal and biochemical evaluation. We provide fully documented toxicological safety profiles verified by independent laboratories.
+                    </p>
+                </div>
+
+                <div class="grid-3">
+                    <div class="value-card">
+                        <div class="value-card-body">
+                            <span class="value-num">01 / SAFETY</span>
+                            <h3>90-Day Composting</h3>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.75;">
+                                Verified structural disintegration under standard natural soil composting cycles. Disintegrates into nutrient-rich soil matrix with zero chemical residue.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-card-body">
+                            <span class="value-num">02 / COMPLIANCE</span>
+                            <h3>Zero Migration</h3>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.75;">
+                                Liquid chromatographic assays confirm 0.00 ppm compound transfer at peak temperatures up to 150°C. Perfect thermal packaging stability and zero leaching.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-card-body">
+                            <span class="value-num">03 / TESTING</span>
+                            <h3>Microplastic-Free</h3>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.75;">
+                                Certified organic matrix structure. Laser diffraction scanners confirm absolute zero polymer fragmentation or synthetic microparticulate residue.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 50px;">
+                    <!-- Elegant security protected report download button -->
+                    <button class="btn-primary" id="download-reports-btn" style="background-color: var(--primary);">
+                        Download Certified Lab Reports
+                    </button>
+                    <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 10px;">(Security Protected Area: Right-click is locked on this download button)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advantage/Comparison Section -->
+        <section id="advantage" class="section-padding container bg-alt" style="border-radius: 24px; padding: 5rem 4rem;">
+            <h2 class="section-title">Visionary Choices for Sustainability</h2>
+            <p class="section-subtitle">Upgrade your infrastructure from harmful conventional options to compliant alternatives.</p>
+
+            <div class="grid-3">
+                <div class="value-card">
+                    <div class="value-card-body">
+                        <span class="value-num">01</span>
+                        <h3>Legal Status</h3>
+                        <p>Using plastic packaging risks legal fines and compliance issues. Eco Mold packaging options are fully certified, ensuring peace of mind for your culinary business operations.</p>
+                    </div>
+                </div>
+                <div class="value-card">
+                    <div class="value-card-body">
+                        <span class="value-num">02</span>
+                        <h3>GST Savings</h3>
+                        <p>Transitioning to natural composites directly lowers your tax burden. Shift from 18% GST rates on traditional single-use packaging to 5% with our natural bio-products, enhancing your margin.</p>
+                    </div>
+                </div>
+                <div class="value-card">
+                    <div class="value-card-body">
+                        <span class="value-num">03</span>
+                        <h3>Customer Love</h3>
+                        <p>Over 90% of consumers prefer brands with sustainable practices. Transforming packaging perception from "another plastic container" to "Wow, they care!" builds lasting loyalty.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="ECO MOLD logo 1 .png" alt="Eco Mold Logo" style="height: 60px; background-color: #ffffff; padding: 5px 10px; border-radius: 6px; margin-bottom: 15px;">
+                    <p>Your Sustainable Packaging System Partner. Crafting high-durability compostable solutions from agricultural waste.</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Direct Contact Coordinates</h4>
+                    <p><strong>MIDHUN GB</strong></p>
+                    <p>Phone: +91 7397578218</p>
+                    <p>Email: midhungb7@gmail.com</p>
+                    <p>Headquarters: Jayanagar 9th Block, Bangalore</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Eco Mold. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Dev Mode Toggle Button -->
+    <button class="dev-console-btn" onclick="toggleConsole()" aria-label="Toggle Lab Event Monitor Console">
+        ⚙️ Open Evaluation Console
+    </button>
+
+    <!-- Dev Mode Diagnostic Event Console Output Dashboard -->
+    <div class="lab-console-overlay" id="labConsole">
+        <div class="lab-console-header">
+            <span>LAB 3 / CIA EVENT MONITOR</span>
+            <span onclick="toggleConsole()" style="cursor: pointer; color: #fff;">[Close]</span>
+        </div>
+        <div class="lab-console-line"><span class="lab-console-label">[load]</span> Page Initialization: <span id="console-load" style="color:#fff;">Pending...</span></div>
+        <div class="lab-console-line"><span class="lab-console-label">[resize]</span> Viewport Width: <span id="console-resize" style="color:#ffd166;">Calculating...</span></div>
+        <div class="lab-console-line"><span class="lab-console-label">[input/keyup]</span> Input Value: <span id="console-input" style="color:#ffd166;">No Input Detected</span></div>
+        <div class="lab-console-line"><span class="lab-console-label">[mouseover]</span> Last Product Hovered: <span id="console-hover" style="color:#ffd166;">None</span></div>
+        <div class="lab-console-line"><span class="lab-console-label">[focus/blur]</span> Active Form Focus: <span id="console-focus" style="color:#ffd166;">Inactive</span></div>
+        <div class="lab-console-line"><span class="lab-console-label">[change]</span> Table Quantity Modifier: <span id="console-change" style="color:#ffd166;">0 Units</span></div>
+        <div class="lab-console-line"><span class="lab-console-label">[contextmenu]</span> Right-Click Lock: <span id="console-context" style="color:#ffd166;">Unlocked</span></div>
+    </div>
+
+    <!-- Client Login Portal Modal Window Upgraded with Secure Password + simulated OTP Step Validation -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <!-- Step 1: Username & Password Entry -->
+            <div id="login-step-1">
+                <h2 id="modalTitle" style="color: var(--primary); margin-bottom: 20px; font-weight: 800; font-size: 1.4rem; text-transform: uppercase; letter-spacing: 0.5px;">Portal Secure Sign-In</h2>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 15px;">Configure your authenticated session credentials.</p>
+                <input type="text" id="username" class="form-input" placeholder="Enterprise Username" style="margin-bottom: 12px; width:100%;">
+                <input type="password" id="password" class="form-input" placeholder="Password" style="margin-bottom: 20px; width:100%;">
+                <button onclick="simulateLogin()" class="btn-primary" style="width: 100%;">Request OTP Verification</button>
+            </div>
+
+            <!-- Step 1.5: 2FA Delivery Channel Option Selection -->
+            <div id="login-step-channel" style="display: none;">
+                <h2 style="color: var(--primary); margin-bottom: 15px; font-weight: 800; font-size: 1.4rem; text-transform: uppercase; letter-spacing: 0.5px;">Two-Step Verification</h2>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 15px;">Choose your verified channel to receive the secure simulated passcode:</p>
+                
+                <div class="auth-channel-selector">
+                    <label class="auth-channel-option">
+                        <input type="radio" name="otp_channel" value="phone" checked>
+                        <span>SMS to Registered Device (+91 ******8218)</span>
+                    </label>
+                    <label class="auth-channel-option">
+                        <input type="radio" name="otp_channel" value="email">
+                        <span>Email to Corporate Box (m***@gmail.com)</span>
+                    </label>
+                </div>
+
+                <button onclick="dispatchOTPCode()" class="btn-primary" style="width: 100%; margin-bottom: 10px;">Dispatch Verification Code</button>
+                <p onclick="goBackToLoginStep1()" style="color: var(--text-muted); cursor: pointer; font-size: 0.85rem; text-decoration: underline;">Change Credentials</p>
+            </div>
+
+            <!-- Step 2: Verification OTP entry (Hidden Initially) -->
+            <div id="login-step-2" style="display: none;">
+                <h2 style="color: var(--primary); margin-bottom: 15px; font-weight: 800; font-size: 1.4rem; text-transform: uppercase; letter-spacing: 0.5px;">OTP Validation</h2>
+                <div id="otp-simulation-notice" class="otp-display-notice">Simulating OTP Dispatch...</div>
+                <p id="otp-instruction-text" style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 15px;">Please enter the simulated 4-digit code to authenticate.</p>
+                
+                <input type="text" id="otpCode" class="form-input" placeholder="0000" maxlength="4" style="margin-bottom: 12px; width: 100%; text-align: center; font-size: 1.5rem; font-weight: 800; letter-spacing: 12px; padding: 10px;">
+                <span id="otp-error-msg" style="display: none; color: #d9534f; font-size: 0.8rem; font-weight: 600; margin-bottom: 10px;">Incorrect OTP value. Please check the code and re-enter.</span>
+                
+                <button onclick="verifyOTP()" class="btn-primary" style="width: 100%; margin-bottom: 10px;">Verify & Access Portal</button>
+                <p onclick="goBackToChannelSelection()" style="color: var(--text-muted); cursor: pointer; font-size: 0.85rem; text-decoration: underline;">Change Verification Channel</p>
+            </div>
+
+            <p onclick="closeLogin()" style="margin-top: 20px; color: var(--text-muted); cursor: pointer; font-size: 0.85rem; text-decoration: underline;">Cancel Connection</p>
+        </div>
+    </div>
+
+    <!-- Form Submission Success Dialog Modal Box -->
+    <div id="successBanner" class="success-banner">
+        <div class="success-banner-content">
+            <h2 style="color: var(--primary); font-size: 2.2rem; margin-bottom: 15px; font-weight: 800; letter-spacing: -0.5px;">YOUR QUOTE RECEIVED SUCCESSFULLY</h2>
+            <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 25px; line-height: 1.6;">Your customized sustainable packaging request has been indexed. Our Bangalore distribution office will follow up with verified logistics coordinates and tailored pricing models.</p>
+            <button onclick="closeSuccessBanner()" class="btn-primary" style="padding: 12px 30px;">Return to Dashboard</button>
+        </div>
+    </div>
+
+    <!-- Toast message notifier system -->
+    <div id="toast" class="notification">Notification message</div>
+
+    <!-- JAVASCRIPT: Advanced Interactive Calculations & Event Handling -->
+    <script>
+        let dropZone;
+let calcTable;
+let cartRowsContainer;
+let totalItemsEl;
+let carbonOffsetEl;
+let totalPriceEl;
+let cardsList;
+let quoteCart = [];
+
+// Stably manage active full-stack 2FA variables
+let serverSessionId = null;
+let generatedOTP = '';
+let currentActivePortal = '';
+
+// ==========================================
+// UTILITY: Simple Toast Notifications
+// ==========================================
+function showToast(message) {
+    const toast = document.getElementById('toast');
+    toast.innerText = message;
+    toast.style.display = 'block';
+    setTimeout(() => { toast.style.display = 'none'; }, 3000);
+}
+
+// Toggle Diagnostic Lab Console visibility
+function toggleConsole() {
+    const consoleEl = document.getElementById('labConsole');
+    consoleEl.style.display = consoleEl.style.display === 'block' ? 'none' : 'block';
+}
+
+// Initialize selectors and listeners securely upon DOM readiness
+document.addEventListener('DOMContentLoaded', () => {
+    dropZone = document.getElementById('quote-cart');
+    calcTable = document.getElementById('calc-table');
+    cartRowsContainer = document.getElementById('cart-rows');
+    totalItemsEl = document.getElementById('total-qty');
+    carbonOffsetEl = document.getElementById('carbon-offset');
+    totalPriceEl = document.getElementById('quote-total');
+    cardsList = document.querySelectorAll('.product-card');
+
+    // Bind drag & drop listeners cleanly
+    cardsList.forEach(card => {
+        card.addEventListener('dragstart', (e) => {
+            e.dataTransfer.setData('text/name', card.getAttribute('data-product'));
+            e.dataTransfer.setData('text/price', card.getAttribute('data-price'));
+            card.style.opacity = '0.4'; 
+        });
+        card.addEventListener('dragend', () => { card.style.opacity = '1'; });
+    });
+
+    if (dropZone) {
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault(); 
+            dropZone.classList.add('dragover');
+        });
+
+        dropZone.addEventListener('dragleave', () => {
+            dropZone.classList.remove('dragover');
+        });
+
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.classList.remove('dragover');
+            
+            const pName = e.dataTransfer.getData('text/name');
+            const pPrice = parseInt(e.dataTransfer.getData('text/price') || '0');
+            
+            if (pName && !quoteCart.some(item => item.name === pName)) {
+                // Initialize default order packs of 100 units
+                quoteCart.push({ name: pName, price: pPrice, qty: 100 });
+                renderQuoteCalculator();
+                showToast(`${pName} added to Quote Cart`);
+            } else if (quoteCart.some(item => item.name === pName)) {
+                showToast(`${pName} is already configured in your cart.`);
+            }
+        });
+    }
+});
+
+// ==========================================
+// 1. JS EVENT: LOAD & LOCAL STORAGE
+// ==========================================
+window.addEventListener('load', () => {
+    const visitCount = localStorage.getItem('ecoMoldVisits');
+    const welcomeHeader = document.getElementById('welcome-message');
+    
+    // Console display update
+    document.getElementById('console-load').innerText = "Session initialized. Local Storage active.";
+
+    if (!visitCount) {
+        localStorage.setItem('ecoMoldVisits', '1');
+        showToast("Welcome to Eco Mold!");
+    } else {
+        localStorage.setItem('ecoMoldVisits', parseInt(visitCount) + 1);
+        if (welcomeHeader) {
+            welcomeHeader.innerHTML = "Welcome Back! Let's build your packaging.";
+        }
+    }
+});
+
+// ==========================================
+// 2. JS EVENT: RESIZE
+// ==========================================
+window.addEventListener('resize', () => {
+    const currentWidth = window.innerWidth;
+    document.getElementById('console-resize').innerText = `${currentWidth} px`;
+});
+document.getElementById('console-resize').innerText = `${window.innerWidth} px`;
+
+// ==========================================
+// 3. EVENTS: mouseover / mouseout (Catalog Cards hover)
+// ==========================================
+const observedCards = document.querySelectorAll('.product-card');
+observedCards.forEach(card => {
+    card.addEventListener('mouseover', () => {
+        card.style.transform = 'translateY(-10px)';
+        card.style.borderColor = 'var(--secondary)';
+        card.style.boxShadow = '0 12px 35px rgba(198, 113, 57, 0.15)';
+        document.getElementById('console-hover').innerText = `${card.getAttribute('data-product')}`;
+    });
+
+    card.addEventListener('mouseout', () => {
+        card.style.transform = 'translateY(0)';
+        card.style.borderColor = 'var(--border-color)';
+        card.style.boxShadow = 'none';
+        document.getElementById('console-hover').innerText = "None";
+    });
+});
+
+// ==========================================
+// 4. EVENTS: focus / blur & input / keyup with Advanced Constraints
+// ==========================================
+const inputFields = document.querySelectorAll('.form-input');
+const nameInput = document.getElementById('clientName');
+const emailInput = document.getElementById('clientEmail');
+
+inputFields.forEach(input => {
+    if (input) {
+        input.addEventListener('focus', () => {
+            input.style.borderColor = 'var(--primary)';
+            input.style.boxShadow = '0 0 10px rgba(46, 81, 59, 0.25)';
+            document.getElementById('console-focus').innerText = `Active [${input.placeholder || 'Field'}]`;
+        });
+
+        input.addEventListener('blur', () => {
+            input.style.borderColor = '#ccc';
+            input.style.boxShadow = 'none';
+            document.getElementById('console-focus').innerText = "Inactive";
+        });
+
+        input.addEventListener('input', () => {
+            const len = input.value.length;
+            document.getElementById('console-input').innerText = `"${input.value}" (${len} chars)`;
+        });
+    }
+});
+
+// Constraint: Name must not contain numeric values
+if (nameInput) {
+    nameInput.addEventListener('input', () => {
+        const nameVal = nameInput.value;
+        const hasNumbers = /\d/.test(nameVal);
+        if (hasNumbers) {
+            nameInput.style.borderColor = '#d9534f';
+        } else {
+            nameInput.style.borderColor = 'var(--primary)';
+        }
+    });
+}
+
+// Strictly evaluate email domains
+if (emailInput) {
+    emailInput.addEventListener('input', () => {
+        const emailVal = emailInput.value.trim();
+        const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        if (emailPattern.test(emailVal)) {
+            emailInput.style.borderColor = 'var(--primary)';
+        } else {
+            emailInput.style.borderColor = '#d9534f';
+        }
+    });
+}
+
+// ==========================================
+// 5. FULL-STACK EXPRESS CONNECTED LOGIN WORKFLOW
+// ==========================================
+function openLogin(type) {
+    currentActivePortal = type;
+    document.getElementById('modalTitle').innerText = `${type} Login`;
+    goBackToLoginStep1();
+    document.getElementById('loginModal').style.display = 'flex';
+}
+
+function closeLogin() {
+    document.getElementById('loginModal').style.display = 'none';
+}
+
+// PHASE 1: Verify Credentials with Express Backend
+function simulateLogin() {
+    const user = document.getElementById('username').value.trim();
+    const pass = document.getElementById('password').value.trim();
+
+    if (!user || !pass) {
+        alert("Please fill out all credential fields.");
+        return;
+    }
+
+    fetch('/api/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username: user, password: pass, portalType: currentActivePortal })
+    })
+    .then(async response => {
+        const data = await response.json();
+        if (!response.ok) throw new Error(data.error || 'Invalid parameters.');
+        return data;
+    })
+    .then(data => {
+        serverSessionId = data.sessionId;
+        generatedOTP = data.simulatedOTP; 
+        
+        // Dynamically shift layout to Phase 1.5 Channel Picker
+        document.getElementById('loginModal').innerHTML = `
+            <div class="modal-content">
+                <h2 style="color: var(--primary); margin-bottom: 15px; font-weight:800;">2-Step Verification</h2>
+                <p style="font-size:0.85rem; margin-bottom:15px; color:var(--text-muted)">Select authentication channel:</p>
+                <div style="text-align:left; margin-bottom:20px; font-size:0.9rem;">
+                    <label style="cursor:pointer;"><input type="radio" name="channel" value="sms" checked> SMS to ${data.contactPhone}</label><br><br>
+                    <label style="cursor:pointer;"><input type="radio" name="channel" value="email"> Email to ${data.contactEmail}</label>
+                </div>
+                <button onclick="requestOTPDispatch()" class="btn-primary" style="width:100%;">Send Security Code</button>
+                <p onclick="goBackToLoginStep1()" style="margin-top: 15px; color: var(--text-muted); cursor: pointer; text-decoration: underline; font-size:0.85rem;">Back</p>
+            </div>
+        `;
+    })
+    .catch(err => {
+        alert(err.message); // Explicit Error printed, remaining safely on same step
+    });
+}
+
+// PHASE 1.5: Trigger Dispatch Notification Stream
+function requestOTPDispatch() {
+    const selectedChannel = document.querySelector('input[name="channel"]:checked').value;
+
+    fetch('/api/dispatch-otp', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ sessionId: serverSessionId, channel: selectedChannel })
+    })
+    .then(async response => {
+        const data = await response.json();
+        if (!response.ok) throw new Error(data.error || 'Failed to dispatch OTP.');
+        return data;
+    })
+    .then(data => {
+        // This links the server data to the frontend variable smoothly
+        generatedOTP = data.otp; 
+
+        document.getElementById('loginModal').innerHTML = `
+            <div class="modal-content">
+                <h2 style="color: var(--primary); margin-bottom: 15px; font-weight:800;">Enter OTP Code</h2>
+                <div style="background:#FFF9E6; color:#8A6D3B; padding:10px; border-radius:4px; font-size:0.85rem; margin-bottom:15px; font-weight:600;">
+                    [Simulated OTP Received]: ${generatedOTP}
+                </div>
+                <input type="text" id="otpInput" class="form-input" placeholder="0000" maxlength="4" style="text-align:center; font-size:1.3rem; letter-spacing:8px; margin-bottom:15px;"><br>
+                <button onclick="submitOTPToBackend()" class="btn-primary" style="width:100%;">Verify & Authorize</button>
+            </div>
+        `;showToast(data.message);
+    })
+    .catch(err => alert(err.message));
+}
+
+// PHASE 2: Authenticate OTP and Redirect cleanly to secure Single Page application layouts
+function submitOTPToBackend() {
+    const code = document.getElementById('otpInput').value.trim();
+
+    fetch('/api/verify-otp', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ sessionId: serverSessionId, enteredOTP: code })
+    })
+    .then(async response => {
+        const data = await response.json();
+        if (!response.ok) throw new Error(data.error);
+        return data;
+    })
+    .then(data => {
+        closeLogin();
+        showToast(`Authenticated as ${data.user}`);
+        
+        // Dynamic dashboard view rewrite depending on client or admin authorization roles
+        document.body.innerHTML = `
+            <header style="padding: 20px; background: var(--primary); color: white; display: flex; justify-content: space-between; align-items: center;">
+                <h2>Eco Mold Secure Portal | ${data.role} Dashboard</h2>
+                <button onclick="window.location.reload()" style="padding:8px 16px; background:var(--secondary); color:white; border:none; border-radius:4px; cursor:pointer; font-weight:600;">Exit Terminal</button>
+            </header>
+            <main class="container" style="padding: 5rem 0;">
+                <div style="background: white; border: 1px solid var(--border-color); padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                    <h1 style="color: var(--primary); margin-bottom: 15px;">Welcome Back, ${data.user}!</h1>
+                    <p style="color: var(--text-muted); margin-bottom: 30px;">Access tier clearance verified: <strong>${data.role} Channel Mode</strong>.</p>
+                    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:20px;">
+                        <div style="background:var(--bg-alt); padding:20px; border-radius:6px;"><h4>Logistics Stream</h4><p style="color:var(--primary); font-weight:700; margin-top:5px;">Nominal / Connected</p></div>
+                        <div style="background:var(--bg-alt); padding:20px; border-radius:6px;"><h4>Procurement Tally</h4><p style="color:var(--primary); font-weight:700; margin-top:5px;">5% GST Compliant Tier</p></div>
+                        <div style="background:var(--bg-alt); padding:20px; border-radius:6px;"><h4>Account Anchor</h4><p style="color:var(--primary); font-weight:700; margin-top:5px;">MIDHUN GB</p></div>
+                    </div>
+                </div>
+            </main>
+        `;
+    })
+    .catch(err => {
+        alert(err.message); // Retains user input on error challenge
+    });
+}
+
+function goBackToLoginStep1() {
+    document.getElementById('loginModal').innerHTML = `
+        <div class="modal-content">
+            <h2 id="modalTitle" style="color: var(--primary); margin-bottom: 20px; font-weight:800;">Portal Login</h2>
+            <input type="text" id="username" class="form-input" placeholder="Username" style="margin-bottom: 15px;"><br>
+            <input type="password" id="password" class="form-input" placeholder="Password" style="margin-bottom: 15px;"><br>
+            <button onclick="simulateLogin()" class="btn-primary" style="width: 100%;">Login Securely</button>
+            <p onclick="closeLogin()" style="margin-top: 20px; color: var(--text-muted); cursor: pointer; text-decoration: underline;">Cancel</p>
+        </div>
+    `;
+}
+
+// ==========================================
+// CALCULATOR & CAROUSEL COMPONENT MODULES
+// ==========================================
+function renderQuoteCalculator() {
+    if (quoteCart.length === 0) {
+        calcTable.style.display = 'none';
+        cartRowsContainer.innerHTML = '';
+        recalculateQuoteTotals();
+        return;
+    }
+
+    calcTable.style.display = 'table';
+    cartRowsContainer.innerHTML = '';
+
+    quoteCart.forEach((item, index) => {
+        const subtotal = item.price * item.qty;
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+            <td style="font-weight: 600; color: var(--primary);">${item.name}</td>
+            <td>₹${item.price}</td>
+            <td>
+                <input type="number" class="qty-input" value="${item.qty}" min="10" step="10" 
+                       onchange="updateItemQuantity(${index}, this.value)">
+            </td>
+            <td style="font-weight: 700;">₹${subtotal.toLocaleString()}</td>
+            <td>
+                <button type="button" class="remove-item-btn" onclick="removeItemFromQuote(${index})">Remove</button>
+            </td>
+        `;
+        cartRowsContainer.appendChild(tr);
+    });
+
+    recalculateQuoteTotals();
+}
+
+window.updateItemQuantity = function(index, value) {
+    const qty = parseInt(value) || 0;
+    quoteCart[index].qty = qty;
+    document.getElementById('console-change').innerText = `${qty} Packs of ${quoteCart[index].name}`;
+    renderQuoteCalculator();
+}
+
+window.removeItemFromQuote = function(index) {
+    quoteCart.splice(index, 1);
+    renderQuoteCalculator();
+}
+
+function recalculateQuoteTotals() {
+    let totalCost = 0;
+    let totalVolume = 0;
+
+    quoteCart.forEach(item => {
+        totalCost += item.price * item.qty;
+        totalVolume += item.qty;
+    });
+
+    const carbonSaved = (totalVolume * 0.08).toFixed(1);
+    totalItemsEl.innerText = totalVolume.toLocaleString();
+    carbonOffsetEl.innerText = `${carbonSaved} kg`;
+    totalPriceEl.innerText = `₹${totalCost.toLocaleString()}`;
+}
+
+document.getElementById('quoteRequestForm').addEventListener('submit', function(e) {
+    e.preventDefault(); 
+    if (quoteCart.length === 0) {
+        alert("Please add at least one product to your custom quote table before submitting.");
+        return;
+    }
+    document.getElementById('successBanner').style.display = 'flex';
+});
+
+function closeSuccessBanner() {
+    document.getElementById('successBanner').style.display = 'none';
+    quoteCart = [];
+    renderQuoteCalculator();
+    document.getElementById('quoteRequestForm').reset();
+}
+
+function filterCatalog(category) {
+    const cards = document.querySelectorAll('.product-card');
+    const btns = document.querySelectorAll('.filter-btn');
+    btns.forEach(btn => btn.classList.remove('active'));
+    if (event && event.currentTarget) {
+        event.currentTarget.classList.add('active');
+    }
+    cards.forEach(card => {
+        const itemCat = card.getAttribute('data-category');
+        if (category === 'all' || itemCat === category) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
+window.selectLibraryMaterial = function(matName) {
+    showToast(`Sourcing details loaded for: ${matName}`);
+    document.getElementById('console-input').innerText = `Selected Atlas: ${matName}`;
+}
+
+let activeEcoFactIndex = 0;
+
+function updateEcoFactDisplay() {
+    const currentFact = ecoFacts[activeEcoFactIndex];
+    document.getElementById('eco-info-step').innerText = currentFact.step;
+    document.getElementById('eco-info-header').innerText = currentFact.header;
+    document.getElementById('eco-info-text').innerText = currentFact.text;
+    
+    const strip = document.getElementById('eco-info-image-strip');
+    strip.style.transform = `translateY(-${activeEcoFactIndex * 380}px)`;
+
+    const dots = document.querySelectorAll('.eco-info-dot');
+    dots.forEach((dot, idx) => {
+        if (idx === activeEcoFactIndex) {
+            dot.classList.add('active');
+        } else {
+            dot.classList.remove('active');
+        }
+    });
+    document.getElementById('console-change').innerText = `Fact Deck: ${currentFact.header}`;
+}
+
+window.toggleEcoFact = function(direction) {
+    if (direction === 'next') {
+        activeEcoFactIndex = (activeEcoFactIndex + 1) % ecoFacts.length;
+    } else {
+        activeEcoFactIndex = (activeEcoFactIndex - 1 + ecoFacts.length) % ecoFacts.length;
+    }
+    updateEcoFactDisplay();
+}
+
+window.jumpToEcoFact = function(index) {
+    activeEcoFactIndex = index;
+    updateEcoFactDisplay();
+}
+    </script>
+</body>
+</html>
